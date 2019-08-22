@@ -1,0 +1,537 @@
+<!DOCTYPE html><html><head>
+      <title>readme</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////home/demir/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.4.3/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+      
+
+      
+      
+      
+      
+      
+      
+
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <img src="images/index.png">
+<h2 class="mume-header" id="i%CC%87%C3%A7indekiler">&#x130;&#xE7;indekiler</h2>
+
+<ol>
+<li>
+<h5><a href="#bir-css-%C3%B6n-i%CC%87%C5%9Flemcisi-sass-scss">Bir CSS &#xD6;n-&#x130;&#x15F;lemcisi: SASS &amp; SCSS</a></h5>
+</li>
+<li>
+<h5><a href="#sass%C4%B1n-tarih%C3%A7esi-ve-scss">Sass&apos;&#x131;n Tarih&#xE7;esi ve SCSS</a></h5>
+</li>
+<li>
+<h5><a href="#neden-sassscss-kullanmal%C4%B1y%C4%B1m-nas%C4%B1l-kullan%C4%B1l%C4%B1r">Neden Sass&amp;Scss Kullanmal&#x131;y&#x131;m? Nas&#x131;l Kullan&#x131;l&#x131;r?</a></h5>
+</li>
+<li>
+<h5><a href="#kurulum-ve-derleme-a%C5%9Famas%C4%B1">Kurulum ve Derleme A&#x15F;amas&#x131;</a></h5>
+<ul>
+<li><a href="#npm">npm</a></li>
+<li><a href="#gulp">gulp</a></li>
+</ul>
+</li>
+<li>
+<h5><a href>Sass &#x130;ncelikleri</a></h5>
+<ul>
+<li><a href="#1-de%C4%9Fi%C5%9Fken-tan%C4%B1mlama">De&#x11F;i&#x15F;ken Tan&#x131;mlama</a></li>
+<li><a href="#2-i%CC%87%C3%A7-i%C3%A7e-yap%C4%B1lar-olu%C5%9Fturma">&#x130;&#xE7;-i&#xE7;e Yap&#x131;lar Olu&#x15F;turma</a></li>
+<li><a href="#3-i%CC%87%C3%A7eri-aktar%C4%B1m-import%22">&#x130;&#xE7;eri Aktar&#x131;m - import</a></li>
+<li><a href="#4mixins">Mixins</a></li>
+<li><a href="#5kal%C4%B1t%C4%B1m%22">Kal&#x131;t&#x131;m</a></li>
+<li><a href="#6operat%C3%B6rler">Operat&#xF6;rler</a></li>
+<li><a href="#7ko%C5%9Ful-durumlar%C4%B1if-else">Ko&#x15F;ul Durumlar&#x131;(If- Else)</a></li>
+<li><a href="8-i%CC%87%C5%9Fareti">&quot;&amp;&quot; &#x130;&#x15F;areti</a></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 class="mume-header" id="bir-css-%C3%B6n-i%CC%87%C5%9Flemcisi-sass-scss">Bir CSS &#xD6;n-&#x130;&#x15F;lemcisi: SASS &amp; SCSS</h3>
+
+<p>Sass(<strong>S</strong>yntactically <strong>A</strong>wesome <strong>S</strong>tyle <strong>S</strong>heet), en pop&#xFC;ler Css &#xF6;n-i&#x15F;lemcilerinden biridir. Kendi resmi sitesindeki tan&#x131;m&#x131;na g&#xF6;re olgun, istikrarl&#x131; ve g&#xFC;&#xE7;l&#xFC; seviyede bir Css uzant&#x131; dilidir.</p>
+<p>Uzant&#x131; dili c&#xFC;mlesinin nedeni CSS dili ile ayn&#x131; olup sadece Css&apos; i daha esnek, daha verimli ve daha d&#xFC;zenli yazmam&#x131;za olanak tan&#x131;mas&#x131;ndan dolay&#x131;d&#x131;r. Di&#x11F;er pop&#xFC;ler olan CSS &#xF6;n-i&#x15F;lemcileri ise; LESS, Stylus ve PostCSS&apos; dir. Bu &#xF6;n-i&#x15F;lemciler k&#x131;saca Css&apos; i bir programa dili gibi kullanmam&#x131;za olanak tan&#x131;r.</p>
+<h4 class="mume-header" id="sass-%C4%B1n-tarih%C3%A7esi-ve-scss">Sass&apos; &#x131;n Tarih&#xE7;esi ve Scss</h4>
+
+<p>Sass, 2006 y&#x131;l&#x131;nda Css&apos; i Ruby diline benzer bir yap&#x131;yla geli&#x15F;tirme fikri ile ortaya &#xE7;&#x131;km&#x131;&#x15F; bir Ruby Gem&apos; dir asl&#x131;nda. &#x15E;uan ise bir <a href="https://github.com/sass/sass">GitHub</a> deposunda a&#xE7;&#x131;k kaynak bir &#x15F;ekilde geli&#x15F;tirilmeye devam ediliyor.</p>
+<p>Ruby diline benzer bir yap&#x131;da planland&#x131;&#x11F;&#x131; i&#xE7;in, yaz&#x131;m dili(syntax) normal Css&apos;in d&#x131;&#x15F;&#x131;na &#xE7;&#x131;km&#x131;&#x15F;t&#x131;r do&#x11F;al olarak. Kullan&#x131;m oran&#x131; artt&#x131;k&#xE7;a ve Front-end geli&#x15F;tiricilerin normal Css&apos; den gelen el al&#x131;&#x15F;kanl&#x131;&#x11F;&#x131; g&#xF6;z &#xF6;n&#xFC;nde bulundurularak, s&#xF6;zdizimi de&#x11F;i&#x15F;ime u&#x11F;ram&#x131;&#x15F; ve SCSS haline b&#xFC;r&#xFC;nm&#xFC;&#x15F;t&#xFC;r.</p>
+<pre data-role="codeBlock" data-info class="language-"><code>    Sass geli&#x15F;tiricileri varsay&#x131;lan s&#xF6;zdiziminin Scss oldu&#x11F;unu
+    fakat, Sass s&#xF6;zdizimine de destek vermeye devam edeceklerini s&#xF6;yl&#xFC;yorlar.
+</code></pre><p>K&#x131;saca, Sass ve Scss&apos; in s&#xF6;zdizimi(syntax) haricinde birbirlerinden fark&#x131; yoktur.</p>
+<p>Konunun ba&#x15F;&#x131;ndayken, yaz&#x131;m dili hakk&#x131;nda k&#xFC;&#xE7;&#xFC;k bir &#xF6;rnek g&#xF6;stermek gerekirse;</p>
+<h5 class="mume-header" id="sass">SASS</h5>
+
+<pre data-role="codeBlock" data-info="sass" class="language-sass">    <span class="token number">.</span><span class="token selector">container </span>
+<span class="token property-line">        <span class="token property">width</span><span class="token punctuation">:</span> 200px</span>
+<span class="token property-line">        <span class="token property">height</span><span class="token punctuation">:</span> 200px</span>
+
+        <span class="token number">.</span><span class="token selector">row </span>
+<span class="token property-line">            <span class="token property">background-color</span><span class="token punctuation">:</span> #fff</span>
+</pre><h5 class="mume-header" id="scss">SCSS</h5>
+
+<pre data-role="codeBlock" data-info="scss" class="language-scss">    <span class="token selector">.container </span><span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">200</span><span class="token unit">px</span><span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">200</span><span class="token unit">px</span><span class="token punctuation">;</span>
+
+        <span class="token selector">.row</span><span class="token punctuation">{</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#fff</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+</pre><h4 class="mume-header" id="neden-sassscss-kullanmal%C4%B1y%C4%B1m-nas%C4%B1l-kullan%C4%B1l%C4%B1r">Neden Sass&amp;Scss Kullanmal&#x131;y&#x131;m? Nas&#x131;l Kullan&#x131;l&#x131;r?</h4>
+
+<p>Css&apos; i hantal bir yap&#x131;dan &#xE7;&#x131;kart&#x131;p daha dinamik bir yap&#x131;ya d&#xF6;nd&#xFC;r&#xFC;r. Bize i&#xE7;erisinde de&#x11F;i&#x15F;ken tan&#x131;mlama, i&#xE7; i&#xE7;e yaz&#x131;m kolayl&#x131;&#x11F;&#x131;(yukar&#x131;daki &#xF6;rnek kod gibi), karar yap&#x131;lar&#x131;(if, else) ve d&#xF6;ng&#xFC;ler gibi bir&#xE7;ok imkan sunar.</p>
+<img src="images/sass-scss-css.jpg" width="300px" height="100px">
+<p>Global veya Local bir kurulum ger&#xE7;ekle&#x15F;tirdikten sonra projeye olu&#x15F;turulan &quot;.sass&quot; veya &quot;.scss&quot; dosyalar&#x131;n&#x131; derleyerek normal bir Css dosyas&#x131; olu&#x15F;turur. Ve o Css dosyas&#x131;n&#x131; projeye dahil ederek kullanm&#x131;&#x15F; oluruz.</p>
+<h4 class="mume-header" id="kurulum-ve-derleme-a%C5%9Famas%C4%B1">Kurulum ve Derleme A&#x15F;amas&#x131;</h4>
+
+<h5 class="mume-header" id="npm">npm</h5>
+
+<pre data-role="codeBlock" data-info class="language-"><code>    npm install -g sass
+</code></pre><p>Kurulumu ger&#xE7;ekle&#x15F;tirdikten sonra(npm ve node.js&apos; in g&#xFC;ncel versiyon oldu&#x11F;undan emin olun), bir &quot;.scss&quot; uzant&#x131;l&#x131; dosya yarat&#x131;p komut sat&#x131;r&#x131;na a&#x15F;a&#x11F;&#x131;daki kod ile derleyip, kullan&#x131;ma haz&#x131;r hale getirmi&#x15F; oluyoruz.</p>
+<pre data-role="codeBlock" data-info class="language-"><code>    sass style.scss:style.css 
+</code></pre><p>&quot;:&quot; dan &#xF6;nceki k&#x131;s&#x131;m olu&#x15F;turdu&#x11F;um dosya ismim(style.scss),<br>
+&quot;:&quot; dan sonraki k&#x131;s&#x131;m ise derleme sonunda olu&#x15F;turmas&#x131;n&#x131; istedi&#x11F;im kullan&#x131;lmaya uygun par&#xE7;a</p>
+<p>Dizin belirtebilirsiniz.</p>
+<pre data-role="codeBlock" data-info class="language-"><code>    sass style.scss:app/content/style.css
+</code></pre><p>Yukar&#x131;daki b&#xF6;l&#xFC;m birkez derler b&#x131;rak&#x131;r. Her de&#x11F;i&#x15F;iklik yapmak istedi&#x11F;inizde tekrar tekrar yazmamak i&#xE7;in;</p>
+<pre data-role="codeBlock" data-info class="language-"><code>    sass --watch style.scss:style.css
+</code></pre><h5 class="mume-header" id="gulp">gulp</h5>
+
+<p>Gulp, Front-end i&#x15F; ak&#x131;&#x15F;lar&#x131;n&#x131; otomatikle&#x15F;tirmeye yarayan; kabaca tekrar eden i&#x15F;lemleri g&#xF6;rev olarak tan&#x131;mlay&#x131;p ard&#x131;ndan &#xE7;al&#x131;&#x15F;t&#x131;rmak i&#xE7;in kullan&#x131;l&#x131;r.</p>
+<p>Gulp hakk&#x131;nda daha fazla bilgi almak i&#xE7;in;</p>
+<ul>
+<li><a href="https://medium.com/@keremciu/ben-galp-gulp-1-15340198e866">Medium</a></li>
+<li><a href="https://github.com/omergulcicek/gulp">GitHub</a></li>
+</ul>
+<p>Sass kullan&#x131;m&#x131;na gelecek olursak da &#xF6;ncelikle bir package.json dosyas&#x131; olu&#x15F;turuyoruz.</p>
+<pre data-role="codeBlock" data-info class="language-"><code>    npm init
+</code></pre><p>Daha sonras&#x131;nda da s&#x131;rayla</p>
+<pre data-role="codeBlock" data-info class="language-"><code>    npm install gulp
+
+    ve 
+
+    npm install gulp-sass --save-dev
+</code></pre><p>komutlar&#x131;yla package.json dosyam&#x131;z&#x131;n i&#xE7;erisine ba&#x11F;&#x131;ml&#x131;l&#x131;klar&#x131;m&#x131;z&#x131;, mod&#xFC;llerimizi y&#xFC;klemi&#x15F; oluyoruz.</p>
+<p>Ard&#x131;ndan bir gulpfile.js dosyas&#x131; olu&#x15F;turup i&#xE7;erisine,</p>
+<pre data-role="codeBlock" data-info="scss" class="language-scss">    var gulp = <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;gulp&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    var sass = <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;gulp-sass&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    gulp<span class="token number">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">&apos;css&apos;</span><span class="token punctuation">,</span> <span class="token function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        return gulp<span class="token number">.</span><span class="token function">src</span><span class="token punctuation">(</span>&apos;<span class="token number">.</span>/src/*<span class="token number">.</span>scss<span class="token punctuation">)</span>
+            <span class="token number">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">sass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token number">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>gulp<span class="token number">.</span><span class="token function">dest</span><span class="token punctuation">(</span><span class="token string">&apos;./dest&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><p>yukar&#x131;daki kodlar&#x131; yaz&#x131;yoruz. Burada k&#x131;saca, &quot;src&quot; isimli dosyam&#x131;z&#x131;n i&#xE7;erisindeki t&#xFC;m &quot;scss&quot; uzant&#x131;l&#x131; dosyalar&#x131; derleyip bir css dosya &#xE7;&#x131;kt&#x131;s&#x131; vermesini istiyoruz. Gulp&apos; &#x131; &#xE7;al&#x131;&#x15F;t&#x131;rmak i&#xE7;in ise, terminale &quot;gulp&quot; yazmak yeterli oluyor.</p>
+<p>Ard&#x131;ndan tabi ki olu&#x15F;turulan Css dosyam&#x131;z&#x131; projeye dahil edip(normal HTML i&#xE7;erisine nas&#x131;l dahil ediyorsak), yolumuza devam ediyoruz.</p>
+<h4 class="mume-header" id="sass-i%CC%87ncelikleri">Sass &#x130;ncelikleri</h4>
+
+<h5 class="mume-header" id="1-de%C4%9Fi%C5%9Fken-tan%C4%B1mlama">1. De&#x11F;i&#x15F;ken Tan&#x131;mlama</h5>
+
+<p>Css&apos; de de&#x11F;i&#x15F;ken olu&#x15F;turup kullan&#x131;lmas&#x131;na olanak sa&#x11F;lar, en kullan&#x131;&#x15F;l&#x131; &#xF6;zelliklerden biridir. Ba&#x15F;&#x131;na &quot;$&quot; i&#x15F;areti koymam&#x131;z yeterli oluyor. (php&apos; ciler g&#xFC;l&#xFC;ms&#xFC;yo)</p>
+<pre data-role="codeBlock" data-info="scss" class="language-scss">    <span class="token property"><span class="token variable">$myColor</span></span><span class="token punctuation">:</span> <span class="token hexcode">#424242</span><span class="token punctuation">;</span>
+    <span class="token property"><span class="token variable">$myFontSize</span></span><span class="token punctuation">:</span> <span class="token number">18</span><span class="token unit">px</span><span class="token punctuation">;</span> 
+</pre><h5 class="mume-header" id="2-i%CC%87%C3%A7-i%C3%A7e-yap%C4%B1lar-olu%C5%9Fturma">2. &#x130;&#xE7; i&#xE7;e Yap&#x131;lar Olu&#x15F;turma</h5>
+
+<p>Css yazmay&#x131; h&#x131;zland&#x131;ran, kod kalabal&#x131;&#x11F;&#x131;n&#x131; azaltan ve bence as&#x131;l &#xF6;nemi b&#xFC;y&#xFC;k projelerde ortaya &#xE7;&#x131;kan favori &#xF6;zelli&#x11F;imdir.</p>
+<pre data-role="codeBlock" data-info="scss" class="language-scss">    <span class="token selector">div</span><span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">40</span><span class="token unit">px</span><span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">40</span><span class="token unit">px</span><span class="token punctuation">;</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> purple<span class="token punctuation">;</span>
+
+        <span class="token selector">span</span><span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">20</span><span class="token unit">px</span><span class="token punctuation">;</span>        
+            <span class="token selector">.logo</span><span class="token punctuation">{</span>
+                <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#fff</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</pre><h5 class="mume-header" id="3-i%CC%87%C3%A7eri-aktar%C4%B1m-import">3. &#x130;&#xE7;eri Aktar&#x131;m - import</h5>
+
+<p>3 adet Sass dosyam&#x131;z oldu&#x11F;unu d&#xFC;&#x15F;&#xFC;nelim. Derledikten sonra bize 3 adet Css dosyas&#x131; vermesi pek i&#x15F;imize yaramaz san&#x131;r&#x131;m. O y&#xFC;zden bu &quot;.scss&quot; uzant&#x131;l&#x131; dosyalar&#x131;n birini ana dosya se&#xE7;ip di&#x11F;erlerini bunun i&#xE7;erisine import etmek baya faydal&#x131; olur.</p>
+<h6 class="mume-header" id="_degiskenlerscss">_degiskenler.scss</h6>
+
+<pre data-role="codeBlock" data-info="scss" class="language-scss">    <span class="token property"><span class="token variable">$myColor</span></span><span class="token punctuation">:</span> purple<span class="token punctuation">;</span>
+    <span class="token property"><span class="token variable">$myFontFamily</span></span><span class="token punctuation">:</span> <span class="token string">&apos;Helvetica, sans-serif&apos;</span><span class="token punctuation">;</span> 
+
+</pre><h6 class="mume-header" id="_resetscss">_reset.scss</h6>
+
+<pre data-role="codeBlock" data-info="scss" class="language-scss">    <span class="token selector">*</span><span class="token punctuation">{</span>
+        <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token unit">px</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
+        <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token unit">px</span><span class="token punctuation">;</span>
+        <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</pre><h6 class="mume-header" id="mainscss">main.scss</h6>
+
+<pre data-role="codeBlock" data-info="scss" class="language-scss">    <span class="token keyword">@import</span> <span class="token string">&apos;degiskenler&apos;</span><span class="token punctuation">;</span>
+    <span class="token keyword">@import</span> <span class="token string">&apos;reset&apos;</span><span class="token punctuation">;</span>
+
+    <span class="token selector">h1</span><span class="token punctuation">{</span>
+        <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token variable">$myFontFamily</span><span class="token punctuation">;</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$myColor</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</pre><h5 class="mume-header" id="4mixins">4.Mixins</h5>
+
+<p>Tam bir t&#xFC;rk&#xE7;e kar&#x15F;&#x131;&#x11F;&#x131; zann&#x131;mca yok ama kullan&#x131;lma amac&#x131; k&#x131;saca, s&#xFC;rekli yazd&#x131;&#x11F;&#x131;m&#x131;z Css kodlar&#x131;n&#x131; tek bir yerde(fonksiyon gibi) toplay&#x131;p daha sonras&#x131;nda &#xE7;a&#x11F;&#x131;rma i&#x15F;lemi yaparak &#xF6;geleri, elemanlar&#x131; stillendirmeye yarar.</p>
+<p>Mesela;</p>
+<pre data-role="codeBlock" data-info="scss" class="language-scss"><span class="token keyword">@mixin</span> <span class="token function">myLayout</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.kapsayici</span><span class="token punctuation">{</span>
+    <span class="token keyword">@include</span> <span class="token function">myLayout</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><p>veya</p>
+<pre data-role="codeBlock" data-info="scss" class="language-scss">    <span class="token keyword">@mixin</span> <span class="token function">myWidth</span><span class="token punctuation">(</span><span class="token variable">$width</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token property">max-width</span><span class="token punctuation">:</span> <span class="token variable">$width</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">div</span><span class="token punctuation">{</span>
+        <span class="token keyword">@include</span> <span class="token function">myWidth</span><span class="token punctuation">(</span><span class="token number">600</span><span class="token unit">px</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</pre><h5 class="mume-header" id="5kal%C4%B1t%C4%B1m">5.Kal&#x131;t&#x131;m</h5>
+
+<p>Bu &#xF6;zellik ile kodlar&#x131;m&#x131;za miras alma y&#xF6;ntemi(extend) uygulayabiliriz.</p>
+<pre data-role="codeBlock" data-info="scss" class="language-scss">    <span class="token selector">.myLink</span><span class="token punctuation">{</span>
+        <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">5</span><span class="token unit">px</span><span class="token punctuation">;</span>
+        <span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">.btn</span><span class="token punctuation">{</span>
+        <span class="token keyword">@extend</span> <span class="token number">.</span>myLink<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+</pre><h5 class="mume-header" id="6operat%C3%B6rler">6.Operat&#xF6;rler</h5>
+
+<p>Basit matematik i&#x15F;lemlerini Css&apos; de yapmam&#x131;za olanak sa&#x11F;layan bir &#xF6;zelliktir. Sass taraf&#x131;nda yap&#x131;lan matematiksel i&#x15F;lem, Css taraf&#x131;nda sonu&#xE7;land&#x131;r&#x131;lm&#x131;&#x15F; olarak g&#xF6;r&#xFC;nt&#xFC;lenecektir.</p>
+<h5 class="mume-header" id="sass-1">Sass</h5>
+
+<pre data-role="codeBlock" data-info="scss" class="language-scss">    <span class="token selector">.kutu</span><span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">1</span>/<span class="token number">3</span> <span class="token operator">*</span> <span class="token number">100</span><span class="token unit">%</span><span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">30</span><span class="token unit">px</span> <span class="token operator">*</span> <span class="token number">2.5</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</pre><h5 class="mume-header" id="css-%C3%A7%C4%B1kt%C4%B1s%C4%B1">Css &#xC7;&#x131;kt&#x131;s&#x131;</h5>
+
+<pre data-role="codeBlock" data-info="css" class="language-css">    <span class="token selector"><span class="token class">.kutu</span></span><span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">33.33333</span><span class="token unit">%</span><span class="token punctuation">;</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">75</span><span class="token unit">px</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</pre><h5 class="mume-header" id="7ko%C5%9Ful-durumlar%C4%B1if-else">7.Ko&#x15F;ul Durumlar&#x131;(If-Else)</h5>
+
+<p>Direkt &#xF6;rnek &#xFC;zerinden g&#xF6;stermek gerekirse;</p>
+<pre data-role="codeBlock" data-info="scss" class="language-scss">    <span class="token variable">$value</span> = <span class="token number">12</span><span class="token punctuation">;</span>
+
+    <span class="token selector">div</span><span class="token punctuation">{</span>
+        <span class="token keyword">@if</span> <span class="token selector"><span class="token variable">$value</span> &lt; 4 </span><span class="token punctuation">{</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">@else if</span> <span class="token selector"><span class="token variable">$value</span> == 4 </span><span class="token punctuation">{</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">@else</span> <span class="token punctuation">{</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</pre><h5 class="mume-header" id="8-i%CC%87%C5%9Fareti">8.&quot;&amp;&quot; &#x130;&#x15F;areti</h5>
+
+<p>Bunu canl&#x131; derste &#xF6;rnek proje &#xFC;zerinden daha net bir &#x15F;ekilde a&#xE7;&#x131;klayaca&#x11F;&#x131;m ama yine de k&#x131;sa bir tan&#x131;m yapmam gerekirse; 4. &#xF6;rnekteki gibi yine i&#xE7; i&#xE7;e i&#x15F;lemler yaparken, &quot;&amp;&quot; bu i&#x15F;aret, &quot;Class&quot; lardaki &quot;this&quot; anahtar s&#xF6;zc&#xFC;&#x11F;&#xFC; gibi davran&#x131;r.</p>
+<p>Basit bir &#xF6;rnek kod &#xFC;zerinden g&#xF6;stermek gerekirse;</p>
+<h5 class="mume-header" id="scss-1">Scss</h5>
+
+<pre data-role="codeBlock" data-info="scss" class="language-scss">    <span class="token selector">a</span><span class="token punctuation">{</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+        <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token unit">px</span><span class="token punctuation">;</span>
+
+        <span class="token selector"><span class="token parent important">&amp;</span>:hover</span><span class="token punctuation">{</span>
+            <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</pre><p>Normal Css koduyla bir &quot;hover&quot; i&#x15F;lemi yapsak?</p>
+<h5 class="mume-header" id="css">Css</h5>
+
+<pre data-role="codeBlock" data-info class="language-"><code>    a{
+        color: red;
+        font-size: 10px;
+    }
+
+    a:hover{
+        color: blue;
+    }
+</code></pre><p>&#x15E;imdilik bahsedeceklerim bu kadar. Umar&#x131;m aras&#x131;ndaki farklar&#x131; ve Sass&apos; &#x131;n sa&#x11F;lad&#x131;&#x11F;&#x131; kolayl&#x131;klar&#x131; net bir &#x15F;ekilde aktarabilmi&#x15F;imdir. &#x15E;unu s&#xF6;yleyebilirim ki Sass kullanmaya ba&#x15F;lad&#x131;ktan sonra normal Css yazmak asla istemiyorsunuz ve b&#xFC;y&#xFC;k &#xF6;l&#xE7;ekli projelerin &#x15F;uan i&#xE7;in vazge&#xE7;ilmezi durumunda.</p>
+<hr>
+<h5 class="mume-header" id="kaynaklar">Kaynaklar</h5>
+
+<ul>
+<li><a href="https://sass-lang.com/guide">https://sass-lang.com/guide</a></li>
+<li><a href="https://drupart.com.tr/blog/sass-nedir-nasil-kullanilir">https://drupart.com.tr/blog/sass-nedir-nasil-kullanilir</a></li>
+<li><a href="https://webmaster.kitchen/sass-nedir-neden-kullanmaliyim/">https://webmaster.kitchen/sass-nedir-neden-kullanmaliyim/</a></li>
+<li><a href="https://omergulcicek.github.io/gulp/eklentiler/sass">https://omergulcicek.github.io/gulp/eklentiler/sass</a></li>
+</ul>
+<h6 class="mume-header" id="bu-rehber-yukar%C4%B1daki-kaynaklardan-ve-onlar%C4%B1n-%C3%B6rneklerinden-faydalan%C4%B1larak-yaz%C4%B1lm%C4%B1%C5%9Ft%C4%B1r">Bu rehber yukar&#x131;daki kaynaklardan ve onlar&#x131;n &#xF6;rneklerinden faydalan&#x131;larak yaz&#x131;lm&#x131;&#x15F;t&#x131;r.</h6>
+
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

@@ -4,7 +4,7 @@
 ## İçindekiler
 
 1. ##### [Bir CSS Ön-İşlemcisi: SASS & SCSS](#bir-css-%C3%B6n-i%CC%87%C5%9Flemcisi-sass-scss)
-2. ##### [Sass'ın Tarihçesi ve SCSS](#sass%C4%B1n-tarih%C3%A7esi-ve-scss)
+2. ##### [Sass'ın Tarihçesi ve SCSS](#sass-%C4%B1n-tarih%C3%A7esi-ve-scss)
 3. ##### [Neden Sass&Scss Kullanmalıyım? Nasıl Kullanılır?](#neden-sassscss-kullanmal%C4%B1y%C4%B1m-nas%C4%B1l-kullan%C4%B1l%C4%B1r)
 4. ##### [Kurulum ve Derleme Aşaması](#kurulum-ve-derleme-a%C5%9Famas%C4%B1)
 
@@ -15,12 +15,12 @@
 
     *   [Değişken Tanımlama](#1-de%C4%9Fi%C5%9Fken-tan%C4%B1mlama)
     *   [İç-içe Yapılar Oluşturma](#2-i%CC%87%C3%A7-i%C3%A7e-yap%C4%B1lar-olu%C5%9Fturma)
-    *   [İçeri Aktarım - import](#3-i%CC%87%C3%A7eri-aktar%C4%B1m-import")
+    *   [İçeri Aktarım - import](#3-i%CC%87%C3%A7eri-aktar%C4%B1m-import)
     *   [Mixins](#4mixins)
-    *   [Kalıtım](#5kal%C4%B1t%C4%B1m")
+    *   [Kalıtım](#5kal%C4%B1t%C4%B1m)
     *   [Operatörler](#6operat%C3%B6rler)
     *   [Koşul Durumları(If- Else)](#7ko%C5%9Ful-durumlar%C4%B1if-else)
-    *   ["&" İşareti](8-i%CC%87%C5%9Fareti)
+    *   ["&" İşareti](#8-i%CC%87%C5%9Fareti)
 
 ---
 
