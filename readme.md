@@ -156,7 +156,7 @@ Ardından tabi ki oluşturulan Css dosyamızı projeye dahil edip(normal HTML i�
 
 ##### 1. Değişken Tanımlama
 
-Css' de değişken oluşturup kullanılmasına olanak sağlar, en kullanışlı özelliklerden biridir. Başına "$" işareti koymamız yeterli oluyor. (php' ciler gülümsüyo)
+Css' de değişken oluşturup kullanılmasına olanak sağlar, en kullanışlı özelliklerden biridir. Başına "$" işareti koymamız yeterli oluyor.
 
 ```scss
     $myColor: #424242;
