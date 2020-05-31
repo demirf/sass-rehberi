@@ -3,9 +3,9 @@
 
 ## İçindekiler
 
-1. ##### [Bir CSS Ön-İşlemcisi: SASS & SCSS](#bir-css-%C3%B6n-i%CC%87%C5%9Flemcisi-sass-scss)
+1. ##### [Bir CSS Ön-İşlemcisi: Sass & SCSS](#bir-css-%C3%B6n-i%CC%87%C5%9Flemcisi-sass-scss)
 2. ##### [Sass'ın Tarihçesi ve SCSS](#sass-%C4%B1n-tarih%C3%A7esi-ve-scss)
-3. ##### [Neden Sass&Scss Kullanmalıyım? Nasıl Kullanılır?](#neden-sassscss-kullanmal%C4%B1y%C4%B1m-nas%C4%B1l-kullan%C4%B1l%C4%B1r)
+3. ##### [Neden Sass&SCSS Kullanmalıyım? Nasıl Kullanılır?](#neden-sassscss-kullanmal%C4%B1y%C4%B1m-nas%C4%B1l-kullan%C4%B1l%C4%B1r)
 4. ##### [Kurulum ve Derleme Aşaması](#kurulum-ve-derleme-a%C5%9Famas%C4%B1)
 
     * [npm](#npm)
@@ -25,29 +25,29 @@
 ---
 
 
-### Bir CSS Ön-İşlemcisi: SASS & SCSS
+### Bir CSS Ön-İşlemcisi: Sass & SCSS
 
-Sass(**S**yntactically **A**wesome **S**tyle **S**heet), en popüler Css ön-işlemcilerinden biridir. Kendi resmi sitesindeki tanımına göre olgun, istikrarlı ve güçlü seviyede bir Css uzantı dilidir. 
+Sass(**S**yntactically **A**wesome **S**tyle **S**heet), en popüler CSS ön-işlemcilerinden biridir. Kendi resmi sitesindeki tanımına göre olgun, istikrarlı ve güçlü seviyede bir CSS uzantı dilidir. 
 
-Uzantı dili cümlesinin nedeni CSS dili ile aynı olup sadece Css' i daha esnek, daha verimli ve daha düzenli yazmamıza olanak tanımasından dolayıdır. Diğer popüler olan CSS ön-işlemcileri ise; LESS, Stylus ve PostCSS' dir. Bu ön-işlemciler kısaca Css' i bir programa dili gibi kullanmamıza olanak tanır. 
+Uzantı dili cümlesinin nedeni CSS dili ile aynı olup sadece Css' i daha esnek, daha verimli ve daha düzenli yazmamıza olanak tanımasından dolayıdır. Diğer popüler olan CSS ön-işlemcileri ise; LESS, Stylus ve PostCSS' dir. Bu ön-işlemciler kısaca CSS' i bir programa dili gibi kullanmamıza olanak tanır. 
 
-#### Sass' ın Tarihçesi ve Scss
+#### Sass' ın Tarihçesi ve SCSS
 
-Sass, 2006 yılında Css' i Ruby diline benzer bir yapıyla geliştirme fikri ile ortaya çıkmış bir Ruby Gem' dir aslında. Şuan ise bir [GitHub](https://github.com/sass/sass) deposunda açık kaynak bir şekilde geliştirilmeye devam ediliyor. 
+Sass, 2006 yılında CSS' i Ruby diline benzer bir yapıyla geliştirme fikri ile ortaya çıkmış bir Ruby Gem' dir aslında. Şuan ise bir [GitHub](https://github.com/sass/sass) deposunda açık kaynak bir şekilde geliştirilmeye devam ediliyor. 
 
-Ruby diline benzer bir yapıda planlandığı için, yazım dili(syntax) normal Css'in dışına çıkmıştır doğal olarak. Kullanım oranı arttıkça ve Front-end geliştiricilerin normal Css' den gelen el alışkanlığı göz önünde bulundurularak, sözdizimi değişime uğramış ve SCSS haline bürünmüştür.
+Ruby diline benzer bir yapıda planlandığı için, yazım dili(syntax) normal CSS'in dışına çıkmıştır doğal olarak. Kullanım oranı arttıkça ve Front-end geliştiricilerin normal CSS' den gelen el alışkanlığı göz önünde bulundurularak, sözdizimi değişime uğramış ve SCSS haline bürünmüştür.
 
 ```
     Sass geliştiricileri varsayılan sözdiziminin Scss olduğunu
     fakat, Sass sözdizimine de destek vermeye devam edeceklerini söylüyorlar.
 ```
 
-Kısaca, Sass ve Scss' in sözdizimi(syntax) haricinde birbirlerinden farkı yoktur.
+Kısaca, Sass ve SCSS' in sözdizimi(syntax) haricinde birbirlerinden farkı yoktur.
 
 Konunun başındayken, yazım dili hakkında küçük bir örnek göstermek gerekirse;
 
 
-##### SASS
+##### Sass
 ```sass
     .container 
         width: 200px
@@ -63,7 +63,7 @@ Konunun başındayken, yazım dili hakkında küçük bir örnek göstermek gere
         width: 200px;
         height: 200px;
 
-        .row{
+        .row {
             background-color: #fff;
         }
     }
@@ -72,11 +72,11 @@ Konunun başındayken, yazım dili hakkında küçük bir örnek göstermek gere
 
 #### Neden Sass&Scss Kullanmalıyım? Nasıl Kullanılır?
 
-Css' i hantal bir yapıdan çıkartıp daha dinamik bir yapıya döndürür. Bize içerisinde değişken tanımlama, iç içe yazım kolaylığı(yukarıdaki örnek kod gibi), karar yapıları(if, else) ve döngüler gibi birçok imkan sunar.
+CSS' i hantal bir yapıdan çıkartıp daha dinamik bir yapıya döndürür. Bize içerisinde değişken tanımlama, iç içe yazım kolaylığı(yukarıdaki örnek kod gibi), karar yapıları(if, else) ve döngüler gibi birçok imkan sunar.
 
 <img src="images/sass-scss-css.jpg" width="300px" height="100px" />
 
-Global veya Local bir kurulum gerçekleştirdikten sonra projeye oluşturulan ".sass" veya ".scss" dosyalarını derleyerek normal bir Css dosyası oluşturur. Ve o Css dosyasını projeye dahil ederek kullanmış oluruz.
+Global veya Local bir kurulum gerçekleştirdikten sonra projeye oluşturulan ".sass" veya ".scss" dosyalarını derleyerek normal bir CSS dosyası oluşturur. Ve o CSS dosyasını projeye dahil ederek kullanmış oluruz.
 
 
 
@@ -150,13 +150,13 @@ Ardından bir gulpfile.js dosyası oluşturup içerisine,
 
 yukarıdaki kodları yazıyoruz. Burada kısaca, "src" isimli dosyamızın içerisindeki tüm "scss" uzantılı dosyaları derleyip bir css dosya çıktısı vermesini istiyoruz. Gulp' ı çalıştırmak için ise, terminale "gulp" yazmak yeterli oluyor. 
 
-Ardından tabi ki oluşturulan Css dosyamızı projeye dahil edip(normal HTML içerisine nasıl dahil ediyorsak), yolumuza devam ediyoruz.
+Ardından tabi ki oluşturulan CSS dosyamızı projeye dahil edip(normal HTML içerisine nasıl dahil ediyorsak), yolumuza devam ediyoruz.
 
 #### Sass İncelikleri 
 
 ##### 1. Değişken Tanımlama
 
-Css' de değişken oluşturup kullanılmasına olanak sağlar, en kullanışlı özelliklerden biridir. Başına "$" işareti koymamız yeterli oluyor.
+CSS' de değişken oluşturup kullanılmasına olanak sağlar, en kullanışlı özelliklerden biridir. Başına "$" işareti koymamız yeterli oluyor.
 
 ```scss
     $myColor: #424242;
@@ -165,7 +165,7 @@ Css' de değişken oluşturup kullanılmasına olanak sağlar, en kullanışlı 
 
 ##### 2. İç içe Yapılar Oluşturma
 
-Css yazmayı hızlandıran, kod kalabalığını azaltan ve bence asıl önemi büyük projelerde ortaya çıkan favori özelliğimdir.
+CSS yazmayı hızlandıran, kod kalabalığını azaltan ve bence asıl önemi büyük projelerde ortaya çıkan favori özelliğimdir.
 
 ```scss
     div{
@@ -184,7 +184,7 @@ Css yazmayı hızlandıran, kod kalabalığını azaltan ve bence asıl önemi b
 
 ##### 3. İçeri Aktarım - import
 
-3 adet Sass dosyamız olduğunu düşünelim. Derledikten sonra bize 3 adet Css dosyası vermesi pek işimize yaramaz sanırım. O yüzden bu ".scss" uzantılı dosyaların birini ana dosya seçip diğerlerini bunun içerisine import etmek baya faydalı olur.
+3 adet Sass dosyamız olduğunu düşünelim. Derledikten sonra bize 3 adet CSS dosyası vermesi pek işimize yaramaz sanırım. O yüzden bu ".scss" uzantılı dosyaların birini ana dosya seçip diğerlerini bunun içerisine import etmek baya faydalı olur.
 
 ###### _degiskenler.scss
 ```scss
@@ -214,7 +214,7 @@ Css yazmayı hızlandıran, kod kalabalığını azaltan ve bence asıl önemi b
 ```
 
 ##### 4.Mixins
-Tam bir türkçe karşığı zannımca yok ama kullanılma amacı kısaca, sürekli yazdığımız Css kodlarını tek bir yerde(fonksiyon gibi) toplayıp daha sonrasında çağırma işlemi yaparak ögeleri, elemanları stillendirmeye yarar.
+Tam bir türkçe karşığı zannımca yok ama kullanılma amacı kısaca, sürekli yazdığımız CSS kodlarını tek bir yerde(fonksiyon gibi) toplayıp daha sonrasında çağırma işlemi yaparak ögeleri, elemanları stillendirmeye yarar.
 
 Mesela;
 
@@ -246,30 +246,30 @@ veya
 Bu özellik ile kodlarımıza miras alma yöntemi(extend) uygulayabiliriz.
 
 ```scss
-    .myLink{
+    .myLink {
         padding: 5px;
         text-decoration: none;
     }
 
-    .btn{
+    .btn {
         @extend .myLink;
     }
 
 ```
 
 ##### 6.Operatörler
-Basit matematik işlemlerini Css' de yapmamıza olanak sağlayan bir özelliktir. Sass tarafında yapılan matematiksel işlem, Css tarafında sonuçlandırılmış olarak görüntülenecektir.
+Basit matematik işlemlerini CSS' de yapmamıza olanak sağlayan bir özelliktir. Sass tarafında yapılan matematiksel işlem, CSS tarafında sonuçlandırılmış olarak görüntülenecektir.
 
 ##### Sass
 ```scss
-    .kutu{
+    .kutu {
         width: 1/3 * 100%;
         height: 30px * 2.5;
     }
 ```
-##### Css Çıktısı
+##### CSS Çıktısı
 ```css
-    .kutu{
+    .kutu {
         width: 33.33333%;
         height: 75px;
     }
@@ -282,7 +282,7 @@ Direkt örnek üzerinden göstermek gerekirse;
 ```scss
     $value = 12;
 
-    div{
+    div {
         @if $value < 4 {
             background-color: red;
         }
@@ -303,31 +303,31 @@ Basit bir örnek kod üzerinden göstermek gerekirse;
 
 ##### Scss
 ```scss
-    a{
+    a {
         color: red;
         font-size: 10px;
 
-        &:hover{
+        &:hover {
             color: blue;
         }
     }
 ```
 
- Normal Css koduyla bir "hover" işlemi yapsak? 
+ Normal CSS koduyla bir "hover" işlemi yapsak? 
 
-##### Css
+##### CSS
 ```
-    a{
+    a {
         color: red;
         font-size: 10px;
     }
 
-    a:hover{
+    a:hover {
         color: blue;
     }
 ```
 
-Şimdilik bahsedeceklerim bu kadar. Umarım arasındaki farkları ve Sass' ın sağladığı kolaylıkları net bir şekilde aktarabilmişimdir. Şunu söyleyebilirim ki Sass kullanmaya başladıktan sonra normal Css yazmak asla istemiyorsunuz ve büyük ölçekli projelerin şuan için vazgeçilmezi durumunda.
+Şimdilik bahsedeceklerim bu kadar. Umarım arasındaki farkları ve Sass' ın sağladığı kolaylıkları net bir şekilde aktarabilmişimdir. Şunu söyleyebilirim ki Sass kullanmaya başladıktan sonra normal CSS yazmak asla istemiyorsunuz ve büyük ölçekli projelerin şuan için vazgeçilmezi durumunda.
 
 ---
 
